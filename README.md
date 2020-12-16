@@ -2,7 +2,7 @@
 
 This code offers a custom Provider which makes creating AngularJS 1.X modals simple. Simply append the `Provider` name, `modalStateProvider`, before your regular UI-Router state definition. This Provider will serve a central location in your AngularJS app which handles all or almost all Modal-related logic.
 
-#### UI-Router State Turned Into Modal With One Word of Code
+##### UI-Router State Turned Into Modal With One Word of Code
 
 Here's an example:
 
