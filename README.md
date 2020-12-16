@@ -8,17 +8,17 @@ Here's an example:
 
 ```
 modalStateProvider.state('shop.products.details', {
-	url: '/details/:planId',
+	url: '/details/:productId',
 	templateUrl: '/views/modal',
 	resolve: {
 		// Note that modalState will replace the $stateParams object
 		// when using this Provider. As such, all $stateParams properties
 		// can be found inside it
-		product: ['plans', 'modalState', function (plans, modalState) {
-			return plans.find(modalState.stateParams.planId);
+		product: ['sales', 'modalState', function (sales, modalState) {
+			return sales.find(modalState.stateParams.productId);
 		}]
 	},
-	controller: 'PlanModalController'
+	controller: 'ModalController'
 });
 ```
 
